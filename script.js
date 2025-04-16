@@ -2,10 +2,10 @@ document.body.insertAdjacentHTML(
   "beforeend",
   /*html*/ `
     <main id="main">
-        <input type="number" id="charCount" value="20" min="1">
-        <input type="text" id="output" readonly>
-        <input type="button" value="copy" id="copyBtn">
-        <input type="button" value="generate" id="generateBtn">
+        <input type="number" id="charCount" value="20" min="1" title="Enter character count here">
+        <input type="text" id="output" title="Generated password" readonly>
+        <input type="button" value="copy" title="Copy password to clipboard" id="copyBtn">
+        <input type="button" value="generate" title="Generate password" id="generateBtn">
     </main>
 `
 );
@@ -13,7 +13,6 @@ document.body.insertAdjacentHTML(
 const messagesEl = document.createElement("div");
 messagesEl.id = "messages";
 document.body.prepend(messagesEl);
-messagesEl.innerHTML = '<div class="msg">bob</div>';
 
 const mainEl = document.getElementById("main");
 const generateBtnEl = document.getElementById("generateBtn");

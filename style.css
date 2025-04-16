@@ -27,7 +27,12 @@ input[type="text"] {
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-  outline: 1px solid red;
+  outline: 2px solid rgb(204, 0, 204);
+}
+
+input[type="text"]::selection,
+input[type="number"]::selection {
+  background-color: 2px solid rgb(204, 0, 204);
 }
 
 input[type="button"] {
@@ -54,6 +59,7 @@ input[type="number"] {
 }
 
 main {
+  padding: 10px;
   display: flex;
   width: 100%;
   max-width: 500px;
