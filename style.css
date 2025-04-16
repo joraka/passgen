@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  flex-direction: column;
+  background-color: rgb(192, 192, 192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input {
+  border: 1px solid purple;
+  padding: 5px;
+}
+
+input[type="text"] {
+  outline: none;
+  width: 100%;
+  text-align: center;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: 1px solid red;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  width: 100%;
+  max-width: 5rem;
+  background-color: purple;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(168, 0, 168);
+}
+
+input[type="button"]:active {
+  background-color: rgb(210, 0, 210);
+}
+
+input[type="number"] {
+  text-align: center;
+  width: 100%;
+  max-width: 5rem;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#messages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#messages .msg {
+  padding: 5px 10px;
+  background-color: purple;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.424);
+  cursor: pointer;
+  border: 1px dashed rgb(201, 0, 201);
+  border-left: 10px solid rgb(201, 0, 201);
+}
